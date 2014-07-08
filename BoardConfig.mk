@@ -42,3 +42,6 @@ TW_IGNORE_MAJOR_AXIS_0 := true
 
 # userdata 8GB
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 8589934592
+
+#The large apps tend to max out the code cache fairly quickly (which by default has been 1M). On average, JIT cache usage runs somewhere between 100K and 200K bytes per app. Reducing the max size of the cache can help somewhat with memory usage, but if set too low will send the JIT into a thrashing mode. For the really low-memory devices, we recommend the JIT be disabled entirely.
+PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.jit.codecachesize=0

@@ -30,5 +30,10 @@ PRODUCT_LOCALES += xhdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+#OTAUPDATER
+PRODUCT_COPY_FILES += \
+	device/motorola/falcon/kernel.ota.prop:system/kernel.ota.prop\
+	device/motorola/falcon/rom.ota.prop:system/rom.ota.prop
+
 $(call inherit-product, device/motorola/msm8226-common/keylayout/keylayout.mk)
 $(call inherit-product, vendor/motorola/falcon/falcon-vendor.mk)

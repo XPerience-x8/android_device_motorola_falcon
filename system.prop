@@ -10,3 +10,6 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 
 ro.harwdware.gpu=Adreno™ 305
+
+#vsync synchronized rendering during playback
+mm.enable.vsync.render=1

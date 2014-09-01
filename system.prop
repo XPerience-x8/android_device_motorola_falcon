@@ -13,3 +13,6 @@ ro.harwdware.gpu=Adreno™ 305
 
 #vsync synchronized rendering during playback
 mm.enable.vsync.render=1
+
+#property to set minimum frequency as 787Mhz by default
+ro.min_freq=787000

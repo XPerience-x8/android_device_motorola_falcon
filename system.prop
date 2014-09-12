@@ -16,3 +16,38 @@ mm.enable.vsync.render=1
 
 #property to set minimum frequency as 787Mhz by default
 ro.min_freq=787000
+
+# Enable SSR
+persist.sys.ssr.restart_level=3
+persist.sys.qc.sub.rdump.on=1
+
+# For TCMD debug level
+persist.tcmd.log.limit=0
+
+# Disable QCOM net early sockets feature
+net.early.sockets=0
+
+#
+# system property for Bluetooth SAP support
+# Motorola disabled SAP
+#
+ro.qualcomm.bluetooth.sap=false
+
+#
+# system property for Bluetooth hci transport
+#
+ro.qualcomm.bt.hci_transport=smd
+
+#
+# system property for Bluetooth HFP version
+#
+ro.bluetooth.hfp.ver=1.6
+
+#system props for time-services
+persist.timed.enable=true
+
+#9273 is decimal sum of supported codecs in AAL
+#codecs:(PARSER_)AVI AC3 ASF AAC QCP DTS 3G2 MP2TS
+mm.enable.qcom_parser=37491
+##property to choose between virtual/external wfd display
+persist.sys.wfd.virtual=0
